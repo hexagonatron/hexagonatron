@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #121212;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hex-container {
+    position: relative;
+    height: 288.675px;
+    width: 250px;
+}
+
+.hexagon {
+  width: 250px;
+  height: 144.34px;
+  background-color: #8c0303;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 125px solid transparent;
+  border-right: 125px solid transparent;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 72.17px solid #8c0303;
+}
+
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 72.17px solid #8c0303;
+}
+
+.hex1 {
+    transform: translate(-130px, -228.05325px);
+}
+
+.hex2 {
+    transform: translate(130px, -228.05325px);
+}
+
+.hex3 {
+    transform: translate(260px);
+}
+
+.hex4 {
+    transform: translate(125px, 216.50625px);
+}
+
+.hex5 {
+    transform: translate(-130px, 228.05325px);
+}
+
+.hex6 {
+    transform: translate(-260px);
+}
